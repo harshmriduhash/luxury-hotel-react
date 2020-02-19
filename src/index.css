@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+:root {
+  --primaryColor: #ffbd00;
+  --primaryWhite: #fff;
+  --primaryBlack: #222;
+  --primaryGrey: #efefef;
+  --letterSpacing: 0.25rem;
+  --primaryTransition: all 0.3s ease-in-out;
+}
+body {
+  font-family: "Montserrat", sans-serif !important;
+  background: var(--primaryWhite) !important;
+  color: var(--primaryBlack) !important;
+}
+.letter-spacing {
+  letter-spacing: var(--letterSpacing);
+}
+.text-custom {
+  color: var(--primaryColor);
+}
+.btn-custom {
+  display: inline-block;
+  background: var(--primaryColor);
+  outline: 0.15rem solid var(--primaryColor);
+  outline-offset: 4px;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  color: var(--primaryBlack);
+  font-weight: bold;
+  transition: var(--primaryTransition);
+}
+.btn-custom:hover {
+  background: transparent;
+  color: var(--primaryColor);
+  text-decoration: none;
+}
